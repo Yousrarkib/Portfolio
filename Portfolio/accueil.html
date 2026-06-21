@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – Rkib Yousra</title>
+    <link rel="stylesheet" href="./css/accueil.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="main-portfolio">
+        <nav class="navbar">
+            <div class="logo">RKIB YOUSRA</div>
+            <div class="burger" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="active">ACCUEIL</a></li>
+                <li><a href="#competences">COMPÉTENCES</a></li>
+                <li><a href="#projets">PROJETS</a></li>
+                <li><a href="#parcours">PARCOURS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <header id="accueil" class="header-section">
+            <h1>RKIB YOUSRA</h1>
+            <h3>DÉVELOPPEUSE INFORMATIQUE</h3>
+
+            <div class="content">
+                <div class="photo">
+                    <img src="./img/yousrapp.png" alt="Photo de Yousra" >
+                </div>
+
+                <div class="description">
+                    <h2>A PROPOS DE MOI :</h2>
+                    <div class="box">
+                        <p>
+                            Passionnée d'informatique, j'aime créer, apprendre et donner
+                            vie à mes idées à travers le code. Curieuse et créative,
+                            je cherche toujours à concevoir des projets qui sortent de l'ordinaire.
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="competences" class="skills-section">
+            <h2 class="section-title">COMPÉTENCES</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="./img/html.jpg" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./img/css.webp" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./img/js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./img/php.png" alt="PHP">
+                    <p>PHP</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./img/sql.png" alt="SQL">
+                    <p>SQL</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./img/oracle.png" alt="Oracle">
+                    <p>Oracle</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./img/java.jpg" alt="Java">
+                    <p>Java</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./img/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./img/windevlogo.webp" alt="WinDev">
+                    <p>WinDev</p>
+                </div>
+                <div class="skill-item">
+                    <img src="./img/wordPress.png" alt="WordPress">
+                    <p>WordPress</p>
+                </div>
+            </div>
+
+            <div class="skills-meta">
+                <div class="column">
+                    <h3 class="subtitle">ENVIRONNEMENTS DE PROGRAMMATION</h3>
+                    <ul class="environment-list">
+                        <li>Environnement WinDev</li>
+                        <li>DBeaver / Golden</li>
+                        <li>Eclipse</li>
+                        <li>Visual Studio Code</li>
+                        <li>Android Studio</li>
+                        <li>SQL Server Management Studio</li>
+                    </ul>
+                    <div class="environment-logos">
+                        <img src="./img/vs.jpg" alt="VS Code">
+                        <img src="./img/eclipse.svg" alt="Eclipse">
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h3 class="subtitle">SOFT-SKILLS</h3>
+                    <ul class="environment-list">
+                        <li>Capacité d'analyse</li>
+                        <li>Autonomie</li>
+                        <li>Curiosité</li>
+                        <li>Gestion du stress</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="projects-section">
+            <h2 class="section-title">PROJETS</h2>
+            <div class="projects-container">
+                
+                <div class="project-card" onclick="openProject('page-vitrine')">
+                    <h3>SITE VITRINE POUR MARQUE DE VÊTEMENTS</h3>
+                    <p><strong>LANGAGES UTILISÉS:</strong> CSS, HTML, JS</p>
+                    <p><strong>IDE UTILISÉ:</strong> Visual Studio Code</p>
+                    <p><strong>CONDITIONS:</strong> Seule</p>
+                    <p><strong>CONTEXTE:</strong> Projet Personnel</p>
+                    <div class="project-link">
+                        <img src="./img/projet1.png" alt="Projet Site Vitrine" width="300" height="300"/>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProject('page-agimmo')">
+                    <h3>APPLICATION DE GESTION D'AGENCE IMMOBILIÈRE</h3>
+                    <p><strong>LANGAGES UTILISÉS:</strong> Java, SQL</p>
+                    <p><strong>IDE UTILISÉ:</strong> Eclipse</p>
+                    <p><strong>CONDITIONS:</strong> En binôme</p>
+                    <p><strong>CONTEXTE:</strong> Projet de formation</p>
+                    <div class="project-link">
+                        <img src="./img/projet2.png" alt="Projet Agence Immobilière" width="300" height="300"/>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProject('page-windev')">
+                    <h3>APPLICATION D'ENCAISSEMENT AUTONOME</h3>
+                    <p><strong>LANGAGES UTILISÉS:</strong> WinDev, SQL</p>
+                    <p><strong>IDE UTILISÉ:</strong> WinDev Environment</p>
+                    <p><strong>CONDITIONS:</strong> Seule</p>
+                    <p><strong>CONTEXTE:</strong> Stage (JBA-Soft)</p>
+                    <div class="project-link">
+                        <img src="./img/Windev.png" alt="Application WinDev" width="300" height="300"/>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProject('page-migration')">
+                    <h3>MIGRATION ET NETTOYAGE DE DONNÉES COMMUNALES</h3>
+                    <p><strong>LANGAGES UTILISÉS:</strong> SQL, Oracle</p>
+                    <p><strong>IDE UTILISÉ:</strong> DBeaver / Golden</p>
+                    <p><strong>CONDITIONS:</strong> Seule</p>
+                    <p><strong>CONTEXTE:</strong> Stage (JBA-Soft)</p>
+                    <div class="project-link">
+                        <img src="./img/migration.png" alt="Migration Oracle" width="300" height="300"/>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="parcours" class="parcours-section">
+            <h2 class="section-title">MON PARCOURS</h2>
+            
+            <div class="parcours-container">
+                <div class="parcours-column">
+                    <h3 class="column-title"><i class="fa-solid fa-graduation-cap"></i> ÉDUCATION</h3>
+                    <div class="timeline">
+                        <div class="education-card">
+                            <div class="bullet">●</div>
+                            <div class="period">2025-MAINTENANT</div>
+                            <h4 class="diploma">BUT INFORMATIQUE AS</h4>
+                            <p class="details">BUT informatique en année spéciale, regroupant la première et la deuxième année.</p>
+                        </div>
+                        <div class="education-card">
+                            <div class="bullet">●</div>
+                            <div class="period">DEC 2023-2025</div>
+                            <h4 class="diploma">BTS SIO</h4>
+                            <p class="details">Service informatique aux organisations<br>Développement Web, Système et Réseau</p>
+                        </div>
+                        <div class="education-card">
+                            <div class="bullet">●</div>
+                            <div class="period">SEPT-NOV 2023</div>
+                            <h4 class="diploma">LICENCE MIASHS</h4>
+                            <p class="specialty">LI- Tronc commun<br>(Sciences cognitives et économie)</p>
+                        </div>
+                        <div class="education-card">
+                            <div class="bullet">●</div>
+                            <div class="period">2021-2023</div>
+                            <h4 class="diploma">BACCALAURÉAT GÉNÉRAL</h4>
+                            <p class="specialty">(Option SVT et Physique chimie)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="parcours-column">
+                    <h3 class="column-title"><i class="fa-solid fa-briefcase"></i> EXPÉRIENCES</h3>
+                    <div class="timeline">
+                        <div class="experience-block">
+                            <div class="bullet">●</div>
+                            <h4 class="period">AVRIL-JUIN 2026</h4>
+                            <h5 class="internship-title">STAGE – JBA-SOFT (10 sem.)</h5>
+                            <p class="description">Développement d'une application d'encaissement autonome (WinDev) et nettoyage/migration de données communales vers Oracle.</p>
+                            <div class="tools-used">
+                                <span>WinDev</span>
+                                <span>Oracle</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                        <div class="experience-block">
+                            <div class="bullet">●</div>
+                            <h4 class="period">JANVIER-FÉVRIER 2025</h4>
+                            <h5 class="internship-title">STAGE – MAIRIE DE FONTAINE (5 sem.)</h5>
+                            <p class="description">Création du nouveau site web de la mairie de Fontaine sous WordPress.</p>
+                            <div class="tools-used">
+                                <span>WordPress</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                        <div class="experience-block">
+                            <div class="bullet">●</div>
+                            <h4 class="period">JUIN 2024</h4>
+                            <h5 class="internship-title">STAGE – LYCÉE ARISTIDE BERGÈS (5 sem.)</h5>
+                            <p class="description">Création d'une application web pour les rencontres parents-professeurs.</p>
+                            <div class="tools-used">
+                                <span>PHP</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="footer">
+            <h3>CONTACT</h3>
+            <div class="contact-container">
+                <a href="https://www.linkedin.com/in/yousra-rkib-a94070300/" target="_blank" class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i> Linkedin
+                </a>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i> yousrarkib@***.com
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <div id="page-vitrine" class="project-detail-page">
+        <div class="detail-container">
+            <button class="back-btn" onclick="closeProject()"><i class="fa-solid fa-arrow-left"></i> Retour aux projets</button>
+            <h1 class="detail-title">SITE VITRINE POUR MARQUE DE VÊTEMENTS</h1>
+            <div class="detail-image-box">
+                <img src="./img/vitrine.png" alt="Aperçu Site Vitrine" class="detail-img-large">
+            </div>
+            <div class="detail-text-box">
+                <h2>Description du Projet</h2>
+                <p>
+                    Ce projet consiste en la création d'un site vitrine e-commerce responsive nommé Classix, dédié à la vente de vêtements et d'accessoires. 
+                    Le site a été conçu en HTML, CSS et JavaScript, avec une mise en page moderne et adaptée à tous les écrans (ordinateur, tablette, mobile). 
+                    L'objectif était de présenter les produits de manière claire et esthétique, avec une navigation intuitive pour l'utilisateur.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-agimmo" class="project-detail-page">
+        <div class="detail-container">
+            <button class="back-btn" onclick="closeProject()"><i class="fa-solid fa-arrow-left"></i> Retour aux projets</button>
+            <h1 class="detail-title">APPLICATION DE GESTION D'AGENCE IMMOBILIÈRE</h1>
+            <div class="detail-gallery">
+                <img src="./img/projet2.png" alt="Application Agimmo Capture 1">
+                <img src="./img/Agimmo.png" alt="Application Agimmo Capture 2">
+            </div>
+            <div class="detail-text-box">
+                <h2>Description du Projet</h2>
+                <p>
+                    Ag'immo est une application de gestion d'agence immobilière développée avec JavaFX pour l'interface graphique, et qui utilise une base de données pour gérer efficacement les informations.
+                    Elle permet de créer et gérer des agents, d'enregistrer des biens immobiliers, de suivre les réservations, et d'organiser l'ensemble des opérations d'une agence.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-windev" class="project-detail-page">
+        <div class="detail-container">
+            <button class="back-btn" onclick="closeProject()"><i class="fa-solid fa-arrow-left"></i> Retour aux projets</button>
+            <h1 class="detail-title">APPLICATION D'ENCAISSEMENT AUTONOME (WINDEV)</h1>
+            <div class="detail-image-box">
+                <img src="./img/Windev.png" alt="Interface WinDev Clôture Comptable" class="detail-img-large">
+            </div>
+            <div class="detail-text-box">
+                <h2>Description du Projet (Stage JBA-Soft)</h2>
+                <p>
+                    Développement d'une application lourde et autonome réalisée dans le cadre de mon stage de fin d'études chez JBA-Soft. L'objectif principal était de sécuriser et tracer la gestion des encaissements de manière indépendante du progiciel principal de l'entreprise (PHASEO).
+                </p>
+                <br>
+                <p>
+                    <strong>Fonctionnalités clés développées :</strong><br>
+                    • Création d'une interface graphique multi-onglets (Données, Déclarations, Clôture Comptable).<br>
+                    • Automatisation de l'importation de fichiers de traitement sous forme de tableaux structurés.<br>
+                    • Élaboration de requêtes SQL complexes et jointures pour extraire et analyser dynamiquement les lignes de la base de données en temps réel.<br>
+                    • Exportation automatisée des données vers Excel avec génération d'archives ZIP chiffrées et sécurisées par mot de passe.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-migration" class="project-detail-page">
+        <div class="detail-container">
+            <button class="back-btn" onclick="closeProject()"><i class="fa-solid fa-arrow-left"></i> Retour aux projets</button>
+            <h1 class="detail-title">MIGRATION ET NETTOYAGE DE DONNÉES COMMUNALES</h1>
+            <div class="detail-image-box">
+                <img src="./img/migration.png" alt="Schéma Processus de Migration" class="detail-img-large">
+            </div>
+            <div class="detail-text-box">
+                <h2>Description du Projet (Stage JBA-Soft)</h2>
+                <p>
+                    Cette mission transversale consistait à préparer, nettoyer et intégrer les données d'abonnés de nouvelles communes clientes au sein du Système de Gestion de Base de Données (SGBD) Oracle de JBA-Soft, afin qu'elles puissent exploiter le logiciel PHASEO.
+                </p>
+                <br>
+                <p>
+                    <strong>Processus technique mis en œuvre :</strong><br>
+                    • <strong>Exportation & Diagnostic :</strong> Récupération et analyse des fichiers initiaux fournis par les collectivités au format tableur (XLS).<br>
+                    • <strong>Reformatage & Nettoyage :</strong> Écriture de scripts SQL de transition pour standardiser et restructurer les profils des usagers (séparation des civilités, noms, adresses de compteurs et jointures de voies).<br>
+                    • <strong>Importation :</strong> Intégration massive des fichiers convertis en format plat (CSV) vers la base de données de production Oracle à l'aide de l'outil interne <em>Migrator</em>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("open");
+        }
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector(".nav-links").classList.remove("open");
+            });
+        });
+
+        function openProject(pageId) {
+            history.pushState({ projectPage: pageId }, "", "#" + pageId);
+            showProjectDOM(pageId);
+        }
+
+        function showProjectDOM(pageId) {
+            document.getElementById('main-portfolio').style.display = 'none';
+            document.querySelectorAll('.project-detail-page').forEach(page => {
+                page.style.display = 'none';
+            });
+            
+            const projectPage = document.getElementById(pageId);
+            if (projectPage) {
+                projectPage.style.display = 'block';
+                window.scrollTo(0, 0);
+            }
+        }
+
+        function closeProject() {
+            if (window.location.hash) {
+                history.back();
+            } else {
+                resetToHome();
+            }
+        }
+
+        function resetToHome() {
+            document.querySelectorAll('.project-detail-page').forEach(page => {
+                page.style.display = 'none';
+            });
+            document.getElementById('main-portfolio').style.display = 'block';
+        }
+
+        window.addEventListener('popstate', (event) => {
+            if (event.state && event.state.projectPage) {
+                showProjectDOM(event.state.projectPage);
+            } else {
+                resetToHome();
+                window.location.hash = "#projets";
+            }
+        });
+    </script>
+</body>
+</html>
